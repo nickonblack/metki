@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05E3DF0AF8776D83C7BC240A /* WiFiPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EC8D26F7A3A72B73FF168 /* WiFiPayload.swift */; };
+		0F07D178F7DCBFA9CFBA4717 /* NTAGLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C0CB74518D9651A661A340 /* NTAGLayout.swift */; };
+		1E018ED777BB94019F926559 /* RecordComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164C9381BDCCADFBC3ACB97 /* RecordComposer.swift */; };
+		23B64113103FD416C4A87151 /* CloudLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21180050061D88EA0D526F4 /* CloudLibrary.swift */; };
+		3983FF79B9D693262B9C54B7 /* MetkiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB2E27D3746FEFF1B27BFB /* MetkiUITests.swift */; };
+		3FDD2D86F8311F73D0AA23D4 /* TagDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B88CF72E84491AD3652B99 /* TagDetailView.swift */; };
+		4640E7FA533D1A50B9BB0D5D /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3F596C16420F3D2AFC1A4 /* Components.swift */; };
+		4A62AFC76B6889672AEEE0B5 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E9942FE8CEDFC71388BAA /* Localization.swift */; };
+		549389985689022EE04D3024 /* NFCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2653276F226D7F8A6E8F667 /* NFCService.swift */; };
+		66447135352403BC5E8B8BF2 /* LibraryMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69216787B3B0B5A9DA2A7FB5 /* LibraryMerge.swift */; };
+		6B660C7EFC53A24D6E6192A3 /* ShelfCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A08D21C3B12934CF291CC /* ShelfCatalog.swift */; };
+		6CAF20052099590476A6D23F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 91E79BA251685F0D8C710044 /* Localizable.xcstrings */; };
+		6E504BCA98D4B68F81AE5455 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0647AB9E64750A542E21C01 /* WriteView.swift */; };
+		72F124DC27A889A52B8191F0 /* ScanDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5563A6386BF2D4FF95632C /* ScanDiff.swift */; };
+		78299D600B605B4CB6AFA6B1 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E9942FE8CEDFC71388BAA /* Localization.swift */; };
+		951CB70B3B5C0B804191CD86 /* LibraryQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29121DB223C967A5FB3CDB71 /* LibraryQuery.swift */; };
+		95A86AF72CC78A4DB5F2E71A /* TagSecretStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7DBC249A70DD9D16EC2F6 /* TagSecretStore.swift */; };
+		9AE32E0887338A31B671C652 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7B84AC5956A26CAB23DEFF5B /* InfoPlist.xcstrings */; };
+		9CCE35F9022D230F16F72FC5 /* LibraryFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3D69E46092CC6D9A302C6 /* LibraryFiles.swift */; };
+		AB2282A3281A3EA788B1506B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349168AF806EC0876E5520D /* Router.swift */; };
+		AFEA783C0103B641DC8505BD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F721E715BF427188C59FD0 /* Theme.swift */; };
+		B6C51BED122A3D55D6E31721 /* MetkiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E3AB010B6D0C9108F7C9C /* MetkiApp.swift */; };
+		B7311391879CB892BA2384E2 /* MetkiWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EAF4346956167CE59650005C /* MetkiWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF083482466A37217565AAD7 /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D012E271F1D3A51A778232 /* LibraryStore.swift */; };
+		C1EEB07475A9EFAA1D11ED5E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 91E79BA251685F0D8C710044 /* Localizable.xcstrings */; };
+		C838F7AED1DD0AE27095E1F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4743A48235E23B3CB3B7392E /* Assets.xcassets */; };
+		CAADDF2E37303575E3485168 /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A41318C6DDF10E85CC5F5B /* ReadView.swift */; };
+		D7E5F5C8D368720391D0BE09 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5D79E9880A21D1ACFFF39D2D /* AppShortcuts.xcstrings */; };
+		DFA243EBC6B29A1AF3FBDD4E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292555EADADD9E861538BE4A /* Models.swift */; };
+		EBEAC9B3A5056DE256762C52 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC4ECF4C3CC154F308D317 /* LibraryView.swift */; };
+		EC3F547159B68EF642108291 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0BA1ED7344E89C4DD0B68B /* DomainTests.swift */; };
+		F1B212C935F2B143371C555B /* ReadIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263DDC3ADF5F0878FD41F871 /* ReadIntent.swift */; };
+		F2744C193C9BFCB31959C28B /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C21E77BFDB72C9039FE34F49 /* InfoPlist.xcstrings */; };
+		FB6877D25331E6E7F1C67E88 /* MetkiWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4625D16A0BE255E3E42ADE6 /* MetkiWidget.swift */; };
+		FB923D90C702FF3D5F67CB04 /* NDEFCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B354DD881775BA655D7DF /* NDEFCodec.swift */; };
+		FCC420362305DC2C152A8D7C /* TagStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D98C16EAA1F1AC1C037E4D /* TagStorage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24CAF93F15A9453A967018ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 692647C3001BB52C81686C0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC253E421481ED8909E4F4AC;
+			remoteInfo = Metki;
+		};
+		66DE46B50905CA06634498C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 692647C3001BB52C81686C0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC253E421481ED8909E4F4AC;
+			remoteInfo = Metki;
+		};
+		D4CB03609CF7517DD53C8011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 692647C3001BB52C81686C0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 643E7C7F84B57AC6E6FEBA7C;
+			remoteInfo = MetkiWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1BAE9439B8E6EF324E61DD4A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B7311391879CB892BA2384E2 /* MetkiWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02D510211A37677B4B804FD3 /* MetkiUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MetkiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CF3F596C16420F3D2AFC1A4 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		13EF9BA8777964758E9E1BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		234EC8D26F7A3A72B73FF168 /* WiFiPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiPayload.swift; sourceTree = "<group>"; };
+		263DDC3ADF5F0878FD41F871 /* ReadIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadIntent.swift; sourceTree = "<group>"; };
+		27C0CB74518D9651A661A340 /* NTAGLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTAGLayout.swift; sourceTree = "<group>"; };
+		27F721E715BF427188C59FD0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		29121DB223C967A5FB3CDB71 /* LibraryQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryQuery.swift; sourceTree = "<group>"; };
+		292555EADADD9E861538BE4A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4743A48235E23B3CB3B7392E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47A41318C6DDF10E85CC5F5B /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
+		4B9B354DD881775BA655D7DF /* NDEFCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDEFCodec.swift; sourceTree = "<group>"; };
+		4E5563A6386BF2D4FF95632C /* ScanDiff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDiff.swift; sourceTree = "<group>"; };
+		570A08D21C3B12934CF291CC /* ShelfCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfCatalog.swift; sourceTree = "<group>"; };
+		5D79E9880A21D1ACFFF39D2D /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
+		68AC4ECF4C3CC154F308D317 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		69216787B3B0B5A9DA2A7FB5 /* LibraryMerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryMerge.swift; sourceTree = "<group>"; };
+		7B84AC5956A26CAB23DEFF5B /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		80C9E3519DF4817C9604EB4E /* MetkiTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MetkiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E79BA251685F0D8C710044 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		9769B70D7BDACD31D8A96E50 /* Metki.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Metki.entitlements; sourceTree = "<group>"; };
+		A349168AF806EC0876E5520D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A9CB2E27D3746FEFF1B27BFB /* MetkiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetkiUITests.swift; sourceTree = "<group>"; };
+		AF4E3AB010B6D0C9108F7C9C /* MetkiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetkiApp.swift; sourceTree = "<group>"; };
+		B0647AB9E64750A542E21C01 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		B21180050061D88EA0D526F4 /* CloudLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudLibrary.swift; sourceTree = "<group>"; };
+		B2653276F226D7F8A6E8F667 /* NFCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCService.swift; sourceTree = "<group>"; };
+		BA0BA1ED7344E89C4DD0B68B /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		C21E77BFDB72C9039FE34F49 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		C2B88CF72E84491AD3652B99 /* TagDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDetailView.swift; sourceTree = "<group>"; };
+		C98E9942FE8CEDFC71388BAA /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		C9D012E271F1D3A51A778232 /* LibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryStore.swift; sourceTree = "<group>"; };
+		D9D98C16EAA1F1AC1C037E4D /* TagStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagStorage.swift; sourceTree = "<group>"; };
+		DADF6E18B1CF59B2BCB17F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E164C9381BDCCADFBC3ACB97 /* RecordComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordComposer.swift; sourceTree = "<group>"; };
+		EAF4346956167CE59650005C /* MetkiWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MetkiWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0CCCB7A6B85AD1D79121883 /* Metki.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Metki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4625D16A0BE255E3E42ADE6 /* MetkiWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetkiWidget.swift; sourceTree = "<group>"; };
+		F4D7DBC249A70DD9D16EC2F6 /* TagSecretStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSecretStore.swift; sourceTree = "<group>"; };
+		F8A3D69E46092CC6D9A302C6 /* LibraryFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFiles.swift; sourceTree = "<group>"; };
+		FAF02121FF2C8E14C75B8956 /* MetkiWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetkiWidget.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1AF72BF95BDE5462573A8748 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				B0647AB9E64750A542E21C01 /* WriteView.swift */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		1DFFED1B721525643FFDC997 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E3AB010B6D0C9108F7C9C /* MetkiApp.swift */,
+				263DDC3ADF5F0878FD41F871 /* ReadIntent.swift */,
+				A349168AF806EC0876E5520D /* Router.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2AD5ADBA0BE0056C6F6E9DE9 /* MetkiWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DADF6E18B1CF59B2BCB17F4A /* Info.plist */,
+				FAF02121FF2C8E14C75B8956 /* MetkiWidget.entitlements */,
+				F4625D16A0BE255E3E42ADE6 /* MetkiWidget.swift */,
+				62222799A3E383A17C2A86E7 /* Resources */,
+			);
+			path = MetkiWidget;
+			sourceTree = "<group>";
+		};
+		5256F5F526749468EAB85229 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCCB7A6B85AD1D79121883 /* Metki.app */,
+				80C9E3519DF4817C9604EB4E /* MetkiTests.xctest */,
+				02D510211A37677B4B804FD3 /* MetkiUITests.xctest */,
+				EAF4346956167CE59650005C /* MetkiWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62222799A3E383A17C2A86E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B84AC5956A26CAB23DEFF5B /* InfoPlist.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6C7D3AC7BCE1AB10CFA3D76A /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				47A41318C6DDF10E85CC5F5B /* ReadView.swift */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
+		75635F9161F522C373E4595D /* MetkiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9CB2E27D3746FEFF1B27BFB /* MetkiUITests.swift */,
+			);
+			path = MetkiUITests;
+			sourceTree = "<group>";
+		};
+		8CE29563935458A083DD224E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				29121DB223C967A5FB3CDB71 /* LibraryQuery.swift */,
+				C98E9942FE8CEDFC71388BAA /* Localization.swift */,
+				292555EADADD9E861538BE4A /* Models.swift */,
+				E164C9381BDCCADFBC3ACB97 /* RecordComposer.swift */,
+				4E5563A6386BF2D4FF95632C /* ScanDiff.swift */,
+				570A08D21C3B12934CF291CC /* ShelfCatalog.swift */,
+				234EC8D26F7A3A72B73FF168 /* WiFiPayload.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		97E740C8FB549F29D575408F /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B354DD881775BA655D7DF /* NDEFCodec.swift */,
+				B2653276F226D7F8A6E8F667 /* NFCService.swift */,
+				27C0CB74518D9651A661A340 /* NTAGLayout.swift */,
+			);
+			path = NFC;
+			sourceTree = "<group>";
+		};
+		B4AC02EC75E0286194F1EF14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D79E9880A21D1ACFFF39D2D /* AppShortcuts.xcstrings */,
+				C21E77BFDB72C9039FE34F49 /* InfoPlist.xcstrings */,
+				91E79BA251685F0D8C710044 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA1C00442292063678C853A5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				68AC4ECF4C3CC154F308D317 /* LibraryView.swift */,
+				C2B88CF72E84491AD3652B99 /* TagDetailView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		C9372FB38680E4A58C3E873A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				BA1C00442292063678C853A5 /* Library */,
+				6C7D3AC7BCE1AB10CFA3D76A /* Read */,
+				1AF72BF95BDE5462573A8748 /* Write */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CAF159F0EFFF2D9BD90E810B /* Metki */ = {
+			isa = PBXGroup;
+			children = (
+				4743A48235E23B3CB3B7392E /* Assets.xcassets */,
+				13EF9BA8777964758E9E1BC3 /* Info.plist */,
+				9769B70D7BDACD31D8A96E50 /* Metki.entitlements */,
+				1DFFED1B721525643FFDC997 /* App */,
+				D262B7E9C04FB247D957A365 /* Design */,
+				8CE29563935458A083DD224E /* Domain */,
+				C9372FB38680E4A58C3E873A /* Features */,
+				97E740C8FB549F29D575408F /* NFC */,
+				E7C179FEDF577D9C515505E3 /* Persistence */,
+				B4AC02EC75E0286194F1EF14 /* Resources */,
+			);
+			path = Metki;
+			sourceTree = "<group>";
+		};
+		D262B7E9C04FB247D957A365 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				0CF3F596C16420F3D2AFC1A4 /* Components.swift */,
+				27F721E715BF427188C59FD0 /* Theme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		D546EE5C165B45B2426A6C40 /* MetkiTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA0BA1ED7344E89C4DD0B68B /* DomainTests.swift */,
+			);
+			path = MetkiTests;
+			sourceTree = "<group>";
+		};
+		E7C179FEDF577D9C515505E3 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				B21180050061D88EA0D526F4 /* CloudLibrary.swift */,
+				F8A3D69E46092CC6D9A302C6 /* LibraryFiles.swift */,
+				69216787B3B0B5A9DA2A7FB5 /* LibraryMerge.swift */,
+				C9D012E271F1D3A51A778232 /* LibraryStore.swift */,
+				F4D7DBC249A70DD9D16EC2F6 /* TagSecretStore.swift */,
+				D9D98C16EAA1F1AC1C037E4D /* TagStorage.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		F35780FAE8EA91184D3C0FDC = {
+			isa = PBXGroup;
+			children = (
+				CAF159F0EFFF2D9BD90E810B /* Metki */,
+				D546EE5C165B45B2426A6C40 /* MetkiTests */,
+				75635F9161F522C373E4595D /* MetkiUITests */,
+				2AD5ADBA0BE0056C6F6E9DE9 /* MetkiWidget */,
+				5256F5F526749468EAB85229 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		643E7C7F84B57AC6E6FEBA7C /* MetkiWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACE90D11F5E163224688593 /* Build configuration list for PBXNativeTarget "MetkiWidget" */;
+			buildPhases = (
+				A86BD2FD1E8380935F8B8DBA /* Sources */,
+				21A1CAD0605A9DD1AE476945 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetkiWidget;
+			packageProductDependencies = (
+			);
+			productName = MetkiWidget;
+			productReference = EAF4346956167CE59650005C /* MetkiWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C56AEAC31A73CE001443B053 /* MetkiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A0BF6D87F42F1899F5501E /* Build configuration list for PBXNativeTarget "MetkiUITests" */;
+			buildPhases = (
+				F77B088986C370E9FA60BA81 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E5244C99D15F08698A240B0 /* PBXTargetDependency */,
+			);
+			name = MetkiUITests;
+			packageProductDependencies = (
+			);
+			productName = MetkiUITests;
+			productReference = 02D510211A37677B4B804FD3 /* MetkiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CC253E421481ED8909E4F4AC /* Metki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C274DE3684CA73CB9FBC02B5 /* Build configuration list for PBXNativeTarget "Metki" */;
+			buildPhases = (
+				34A10DE5BFE03F8ACF81F38B /* Sources */,
+				610CA9D4E742FE3714AE3832 /* Resources */,
+				1BAE9439B8E6EF324E61DD4A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17AA5EDCD5428774C41CF066 /* PBXTargetDependency */,
+			);
+			name = Metki;
+			packageProductDependencies = (
+			);
+			productName = Metki;
+			productReference = F0CCCB7A6B85AD1D79121883 /* Metki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBAE3CFCA318A03EEE0E9F58 /* MetkiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECED9E9F78DEEEC0D7ED8FDF /* Build configuration list for PBXNativeTarget "MetkiTests" */;
+			buildPhases = (
+				66474FF56916B80E35FD5DD1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AA99891F25410699101FAA2 /* PBXTargetDependency */,
+			);
+			name = MetkiTests;
+			packageProductDependencies = (
+			);
+			productName = MetkiTests;
+			productReference = 80C9E3519DF4817C9604EB4E /* MetkiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		692647C3001BB52C81686C0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					643E7C7F84B57AC6E6FEBA7C = {
+						ProvisioningStyle = Automatic;
+					};
+					C56AEAC31A73CE001443B053 = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC253E421481ED8909E4F4AC;
+					};
+					CC253E421481ED8909E4F4AC = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6D99CE9673A991AC9273C755 /* Build configuration list for PBXProject "Metki" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ru;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ru,
+			);
+			mainGroup = F35780FAE8EA91184D3C0FDC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC253E421481ED8909E4F4AC /* Metki */,
+				FBAE3CFCA318A03EEE0E9F58 /* MetkiTests */,
+				C56AEAC31A73CE001443B053 /* MetkiUITests */,
+				643E7C7F84B57AC6E6FEBA7C /* MetkiWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21A1CAD0605A9DD1AE476945 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE32E0887338A31B671C652 /* InfoPlist.xcstrings in Resources */,
+				C1EEB07475A9EFAA1D11ED5E /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610CA9D4E742FE3714AE3832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E5F5C8D368720391D0BE09 /* AppShortcuts.xcstrings in Resources */,
+				C838F7AED1DD0AE27095E1F8 /* Assets.xcassets in Resources */,
+				F2744C193C9BFCB31959C28B /* InfoPlist.xcstrings in Resources */,
+				6CAF20052099590476A6D23F /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34A10DE5BFE03F8ACF81F38B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B64113103FD416C4A87151 /* CloudLibrary.swift in Sources */,
+				4640E7FA533D1A50B9BB0D5D /* Components.swift in Sources */,
+				9CCE35F9022D230F16F72FC5 /* LibraryFiles.swift in Sources */,
+				66447135352403BC5E8B8BF2 /* LibraryMerge.swift in Sources */,
+				951CB70B3B5C0B804191CD86 /* LibraryQuery.swift in Sources */,
+				BF083482466A37217565AAD7 /* LibraryStore.swift in Sources */,
+				EBEAC9B3A5056DE256762C52 /* LibraryView.swift in Sources */,
+				4A62AFC76B6889672AEEE0B5 /* Localization.swift in Sources */,
+				B6C51BED122A3D55D6E31721 /* MetkiApp.swift in Sources */,
+				DFA243EBC6B29A1AF3FBDD4E /* Models.swift in Sources */,
+				FB923D90C702FF3D5F67CB04 /* NDEFCodec.swift in Sources */,
+				549389985689022EE04D3024 /* NFCService.swift in Sources */,
+				0F07D178F7DCBFA9CFBA4717 /* NTAGLayout.swift in Sources */,
+				F1B212C935F2B143371C555B /* ReadIntent.swift in Sources */,
+				CAADDF2E37303575E3485168 /* ReadView.swift in Sources */,
+				1E018ED777BB94019F926559 /* RecordComposer.swift in Sources */,
+				AB2282A3281A3EA788B1506B /* Router.swift in Sources */,
+				72F124DC27A889A52B8191F0 /* ScanDiff.swift in Sources */,
+				6B660C7EFC53A24D6E6192A3 /* ShelfCatalog.swift in Sources */,
+				3FDD2D86F8311F73D0AA23D4 /* TagDetailView.swift in Sources */,
+				95A86AF72CC78A4DB5F2E71A /* TagSecretStore.swift in Sources */,
+				FCC420362305DC2C152A8D7C /* TagStorage.swift in Sources */,
+				AFEA783C0103B641DC8505BD /* Theme.swift in Sources */,
+				05E3DF0AF8776D83C7BC240A /* WiFiPayload.swift in Sources */,
+				6E504BCA98D4B68F81AE5455 /* WriteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66474FF56916B80E35FD5DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3F547159B68EF642108291 /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86BD2FD1E8380935F8B8DBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78299D600B605B4CB6AFA6B1 /* Localization.swift in Sources */,
+				FB6877D25331E6E7F1C67E88 /* MetkiWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F77B088986C370E9FA60BA81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3983FF79B9D693262B9C54B7 /* MetkiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17AA5EDCD5428774C41CF066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 643E7C7F84B57AC6E6FEBA7C /* MetkiWidget */;
+			targetProxy = D4CB03609CF7517DD53C8011 /* PBXContainerItemProxy */;
+		};
+		1AA99891F25410699101FAA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC253E421481ED8909E4F4AC /* Metki */;
+			targetProxy = 66DE46B50905CA06634498C6 /* PBXContainerItemProxy */;
+		};
+		7E5244C99D15F08698A240B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC253E421481ED8909E4F4AC /* Metki */;
+			targetProxy = 24CAF93F15A9453A967018ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B0A2039CF9038B79720CB76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = MetkiWidget/MetkiWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MetkiWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.metki.reader.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1B69AC24936B2F47A7512040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.metki.reader.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Metki";
+			};
+			name = Release;
+		};
+		1EB2B10D50A8569E4857775D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Metki/Metki.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Metki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.metki.reader;
+				PRODUCT_NAME = Metki;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		27ADAD8F85EEDF4E9FD64497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Metki/Metki.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Metki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.metki.reader;
+				PRODUCT_NAME = Metki;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4CA43011A2D2C1439F07E7A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.metki.reader.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Metki";
+			};
+			name = Debug;
+		};
+		6E5B8A858BDD88D6C794DBBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.metki.reader.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Metki;
+			};
+			name = Debug;
+		};
+		9344FD0CC961F05E2A1B3FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.metki.reader.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Metki;
+			};
+			name = Release;
+		};
+		AB318E39AE2852D0B7B8073A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F91D2C44C656BE0231193115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FD0F379F54BCD189BDF4952B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = MetkiWidget/MetkiWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MetkiWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.metki.reader.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ACE90D11F5E163224688593 /* Build configuration list for PBXNativeTarget "MetkiWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD0F379F54BCD189BDF4952B /* Debug */,
+				0B0A2039CF9038B79720CB76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		42A0BF6D87F42F1899F5501E /* Build configuration list for PBXNativeTarget "MetkiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E5B8A858BDD88D6C794DBBE /* Debug */,
+				9344FD0CC961F05E2A1B3FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6D99CE9673A991AC9273C755 /* Build configuration list for PBXProject "Metki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB318E39AE2852D0B7B8073A /* Debug */,
+				F91D2C44C656BE0231193115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C274DE3684CA73CB9FBC02B5 /* Build configuration list for PBXNativeTarget "Metki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27ADAD8F85EEDF4E9FD64497 /* Debug */,
+				1EB2B10D50A8569E4857775D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ECED9E9F78DEEEC0D7ED8FDF /* Build configuration list for PBXNativeTarget "MetkiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA43011A2D2C1439F07E7A1 /* Debug */,
+				1B69AC24936B2F47A7512040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 692647C3001BB52C81686C0E /* Project object */;
+}

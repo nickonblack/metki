@@ -1,0 +1,95 @@
+name: Metki
+options:
+  bundleIdPrefix: app.metki
+  deploymentTarget:
+    iOS: "17.0"
+  developmentLanguage: ru
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    SWIFT_DEFAULT_ACTOR_ISOLATION: nonisolated
+    SWIFT_EMIT_LOC_STRINGS: YES
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    TARGETED_DEVICE_FAMILY: "1"
+targets:
+  Metki:
+    type: application
+    platform: iOS
+    sources:
+      - path: Metki
+    dependencies:
+      - target: MetkiWidget
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.metki.reader
+        PRODUCT_NAME: Metki
+        INFOPLIST_FILE: Metki/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Metki/Metki.entitlements
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SUPPORTS_MACCATALYST: NO
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_TESTABILITY: YES
+  MetkiWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: MetkiWidget
+      - path: Metki/Domain/Localization.swift
+      - path: Metki/Resources/Localizable.xcstrings
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.metki.reader.widget
+        INFOPLIST_FILE: MetkiWidget/Info.plist
+        CODE_SIGN_ENTITLEMENTS: MetkiWidget/MetkiWidget.entitlements
+        GENERATE_INFOPLIST_FILE: NO
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+        CODE_SIGN_STYLE: Automatic
+  MetkiTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: MetkiTests
+    dependencies:
+      - target: Metki
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.metki.reader.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Metki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Metki"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+  MetkiUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: MetkiUITests
+    dependencies:
+      - target: Metki
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.metki.reader.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: Metki
+        CODE_SIGN_STYLE: Automatic
+schemes:
+  Metki:
+    build:
+      targets:
+        Metki: all
+        MetkiTests: [test]
+        MetkiUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      language: ru
+      region: RU
+      targets:
+        - MetkiTests
+        - MetkiUITests

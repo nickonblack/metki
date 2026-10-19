@@ -1,0 +1,14 @@
+# Xcode output and local settings
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcresult
+.DS_Store
+.cursor/
+*.log
+.env
+.env.*
+!.env.example
+*.p12
+*.mobileprovision

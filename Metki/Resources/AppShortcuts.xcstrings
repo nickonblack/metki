@@ -1,0 +1,23 @@
+{
+  "sourceLanguage": "ru",
+  "strings": {
+    "Считать метку в ${applicationName}": {
+      "extractionState": "manual",
+      "localizations": {
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Считать метку в ${applicationName}"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Read a tag with ${applicationName}"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
